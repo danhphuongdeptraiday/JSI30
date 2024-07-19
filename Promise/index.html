@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container_history_search_weather {
+        width: 100%;
+        min-height: 150px;
+        border: 2px solid red;
+        display: flex;
+        flex-wrap: wrap;
+      }
+
+      .history {
+        margin: 10px;
+        padding: 20px;
+        width: 200px;
+        min-height: 100px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <input type="text" placeholder="Enter place ?" id="search_place" />
+    <button id="search_btn">Search</button>
+
+    <div class="container_history_search_weather"></div>
+
+    <script src="./app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      .container {
+        width: 50%;
+        min-height: 500px;
+        border: 2px solid red;
+        padding: 20px;
+        box-sizing: border-box;
+      }
+
+      .container #searchInput {
+        width: 76%;
+        padding: 10px;
+      }
+      .container #searchBtn {
+        padding: 10px;
+      }
+
+      .output {
+        margin-top: 20px;
+        display: flex;
+        background-color: green;
+      }
+
+      .output_index {
+        width: 15%;
+        background-color: beige;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 18px;
+      }
+
+      .output_content {
+        width: 85%;
+        color: aliceblue;
+        min-height: 50px;
+        padding: 0 5px;
+      }
+    </style>
+  </head>
+  <body class="body">
+    <!-- <h1 id="name">Nguyễn Danh Phương</h1>
+
+    <ul>
+      <li class="groupA">Công Tú</li>
+      <li class="groupB">Ngọc Minh</li>
+      <li class="groupA">Trần Lâm</li>
+    </ul>
+
+    <p class="groupB">SIUUUUUU</p>
+
+    <button class="change_font_size">Change Font Size</button>
+    <br /> -->
+
+    <!-- Mỗi lần nhập dữ liệu ở trong input và bấm thanh search 
+     thì nó sẽ hiện ra 1 thẻ div bên dưới chứa nội dung vừa nhập  -->
+    <div class="container">
+      <input type="text" placeholder="Search here ..." id="searchInput" />
+      <button id="searchBtn">Search</button>
+    </div>
+
+    <!-- Xử lý phần lưu vào localStorage
+        Nếu người dùng nhập 1 giá trị được lưu vào localStorage rồi thì sẽ không lưu vào được nữa
+        Thay đổi index của thẻ 
+
+        Khi người dùng reload trang thì vẫn sẽ hiện dữ liệu ở bên dưới thanh search
+    
+        [option]: update index của từng lần search
+    -->
+
+    <script src="dom.js"></script>
+  </body>
+</html>
