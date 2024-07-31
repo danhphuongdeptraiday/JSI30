@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script type="module">
+      import { v4 as uuidv4 } from "https://cdn.jsdelivr.net/npm/uuid@8.3.2/dist/esm-browser/index.js";
+
+      window.uuidv4 = uuidv4;
+    </script>
+    <style>
+      .task {
+        margin-top: 20px;
+        border: 1px solid red;
+        min-height: 20px;
+        padding: 20px;
+        background-color: antiquewhite;
+      }
+
+      .task div {
+        margin-bottom: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <input type="text" placeholder="Task..." id="task" />
+    <br />
+    <input type="text" placeholder="Description" id="description" />
+    <br />
+    <b>Deadline</b>
+    <input
+      id="doneDate"
+      placeholder="Deadline"
+      type="datetime-local"
+      name=""
+      id=""
+    />
+    <br />
+    <button id="Submit_btn">Submit</button>
+    <br />
+    <button id="Read_btn">Read</button>
+
+    <div class="container_task"></div>
+    .split(" ")
+    <script type="module" src="./firebase.js"></script>
+  </body>
+</html>

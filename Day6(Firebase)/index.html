@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UUIDv4 Example</title>
+    <!-- Include the uuid package from a CDN -->
+  </head>
+  <body>
+    <h1>UUIDv4 Example</h1>
+    <p id="uuid-display">
+      Click the button to generate a UUID and set it as the ID of this element
+    </p>
+    <button onclick="generateUUID()">Generate UUID</button>
+    <script type="module">
+      import { v4 as uuidv4 } from "https://cdn.jsdelivr.net/npm/uuid@8.3.2/dist/esm-browser/index.js";
+
+      window.uuidv4 = uuidv4;
+    </script>
+    <script>
+      function generateUUID() {
+        // Generate a new UUID
+
+        //   window.uuidv4 = uuidv4;
+        // const newUUID = uuidv4;
+        console.log(window.uuidv4());
+      }
+    </script>
+  </body>
+</html>
